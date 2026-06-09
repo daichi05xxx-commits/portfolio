@@ -160,6 +160,81 @@
       background-color: #2563eb;
     }
 
+    .contact-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .github-btn {
+      background-color: #24292e;
+    }
+
+    .github-btn:hover {
+      background-color: #1a1e22;
+    }
+
+    .works {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .work-card {
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      padding: 24px 28px;
+      flex: 1 1 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .work-card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .work-card .icon {
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+
+    .work-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .work-card .tags {
+      font-size: 0.78rem;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    .work-card .desc {
+      font-size: 0.85rem;
+      color: #777;
+      flex: 1;
+    }
+
+    .work-card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .work-card a:hover {
+      color: #2563eb;
+    }
+
     footer {
       text-align: center;
       padding: 32px;
@@ -188,7 +263,9 @@
     <div class="logo">神谷大智</div>
     <nav>
       <a href="#skills">スキル</a>
+      <a href="#works">制作物</a>
       <a href="#contact">お問い合わせ</a>
+      <a href="https://github.com/daichi05xxx-commits" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </header>
 
@@ -221,11 +298,27 @@
     </div>
   </section>
 
+  <section id="works">
+    <h2>制作物</h2>
+    <div class="works">
+      <div class="work-card">
+        <div class="icon">🌐</div>
+        <h3>ポートフォリオサイト</h3>
+        <p class="tags">HTML / CSS / GitHub Pages</p>
+        <p class="desc">AIツールを使って作成したポートフォリオサイト</p>
+        <a href="https://daichi05xxx-commits.github.io/portfolio/" target="_blank" rel="noopener noreferrer">サイトを見る →</a>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <h2>お問い合わせ</h2>
     <div class="contact">
       <p>お仕事のご依頼やご質問はメールからお気軽にどうぞ。</p>
-      <a href="mailto:daichi05xxx@gmail.com">メールを送る</a>
+      <div class="contact-links">
+        <a href="mailto:daichi05xxx@gmail.com">メールを送る</a>
+        <a href="https://github.com/daichi05xxx-commits" target="_blank" rel="noopener noreferrer" class="github-btn">GitHubを見る</a>
+      </div>
     </div>
   </section>
 
